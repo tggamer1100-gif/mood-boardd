@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kopi Luwak Lawak | Aroma Mewah, Rasa Bikin Ketawa</title>
+
+    <meta
+      name="description"
+      content="Kenali Kopi Luwak Lawak, kopi dengan tampilan unik, desain menarik, dan pengalaman ngopi yang menyenangkan."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="kopi.css" />
+
+    <!-- JavaScript -->
+    <script src="kopi.js" defer></script>
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#beranda" class="logo">
+          <span class="logo-icon"
+            ><img src="Maskot Luwak Keren dan Logo Kopi Ceria.png" alt=""
+          /></span>
+
+          <span class="logo-text">
+            Kopi Luwak
+            <strong>Lawak.</strong>
+          </span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="#beranda" class="nav-link active"> Beranda </a>
+
+          <a href="#produk" class="nav-link"> Produk </a>
+
+          <a href="#tentang" class="nav-link"> Tentang </a>
+
+          <a href="#kontak" class="nav-link"> Kontak </a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="search-btn" id="searchBtn" aria-label="Cari produk">
+            🔍
+          </button>
+
+          <button class="cart-btn" id="cartBtn" aria-label="Lihat keranjang">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+
+          <a href="#produk" class="btn btn-primary nav-buy">
+            Beli Sekarang
+            <span>↗</span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Buka menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-decoration decoration-one"></div>
+        <div class="hero-decoration decoration-two"></div>
+
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="eyebrow"> ☕ KOPI PREMIUM, RASA ISTIMEWA </span>
+
+            <h1>
+              Kopi Luwak
+              <span>Lawak.</span>
+            </h1>
+
+            <h2>Aroma Mewah, Rasa Bikin Ketawa!</h2>
+
+            <p>
+              Ngopi bukan sekadar minum kopi. Nikmati pengalaman ngopi yang
+              menyenangkan dengan cita rasa khas dan karakter yang unik.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#produk" class="btn btn-primary">
+                Pesan Sekarang
+                <span>→</span>
+              </a>
+
+              <a href="#tentang" class="btn btn-secondary"> Kenali Kami </a>
+            </div>
+
+            <div class="hero-info">
+              <div class="info-item">
+                <span class="info-icon"
+                  ><img
+                    src="Maskot_Rakun_Berkacamata_Ceria-removebg-preview.png"
+                    alt=""
+                /></span>
+
+                <div>
+                  <strong>Premium</strong>
+                  <small>Cita rasa pilihan</small>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">🌿</span>
+
+                <div>
+                  <strong>Natural</strong>
+                  <small>Aroma khas kopi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <span class="floating-label label-top"> ✨ Aroma Istimewa </span>
+
+              <img
+                src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=85"
+                alt="Biji kopi pilihan"
+                class="hero-image"
+              />
+
+              <div class="hero-product">
+                <div class="product-package">
+                  <span>☕</span>
+
+                  <strong>
+                    KOPI LUWAK
+                    <br />
+                    LAWAK
+                  </strong>
+
+                  <small>PREMIUM COFFEE</small>
+                </div>
+
+                <div class="hero-product-info">
+                  <span class="product-tag"> BEST CHOICE </span>
+
+                  <h3>Kopi Original</h3>
+
+                  <p>Teman terbaik untuk setiap cerita.</p>
+
+                  <a href="#produk"> Jelajahi Produk → </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mascot-card">
+              <span class="mascot"
+                ><img
+                  src="Maskot_Rakun_Berkacamata_Ceria-removebg-preview.png"
+                  alt=""
+                  sizes="10px"
+                  srcset=""
+              /></span>
+
+              <p>
+                Ngopi dulu,
+                <strong>baru lawak!</strong>
+              </p>
+            </div>
+
+            <div class="floating-bean bean-one">☕</div>
+            <div class="floating-bean bean-two">🫘</div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             SEARCH BAR
+        ========================== -->
+
+      <section class="search-section" id="searchSection">
+        <div class="container">
+          <div class="search-box">
+            <span>🔎</span>
+
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Cari kopi favoritmu..."
+              aria-label="Cari produk kopi"
+            />
+
+            <button id="clearSearch" type="button">Hapus</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             PRODUK
+        ========================== -->
+
+      <section class="products section-padding" id="produk">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow"> PILIHAN FAVORIT </span>
+
+              <h2>Produk <span>Unggulan.</span></h2>
+
+              <p>Temukan teman ngopi yang paling cocok dengan selera kamu.</p>
+            </div>
+
+            <a href="#produk" class="text-link"> Lihat Semua → </a>
+          </div>
+
+          <!-- FILTER KATEGORI -->
+
+          <div class="product-filters">
+            <button class="filter-btn active" data-category="semua">
+              Semua
+            </button>
+
+            <button class="filter-btn" data-category="original">
+              Original
+            </button>
+
+            <button class="filter-btn" data-category="rasa">Kopi Varian</button>
+          </div>
+
+          <!-- DAFTAR PRODUK -->
+
+          <div class="product-grid" id="productGrid">
+            <!-- PRODUK 1 -->
+
+            <article
+              class="product-card"
+              data-category="original"
+              data-name="Kopi Original"
+              data-price="150000"
+            >
+              <div class="product-image product-brown">
+                <span class="product-badge"> Best Seller </span>
+
+                <img
+                  src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=700&q=85"
+                  alt="Kopi Original"
+                />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> SIGNATURE </span>
+
+                <h3>Kopi Original</h3>
+
+                <p>
+                  Karakter kopi yang khas dengan aroma yang menggugah selera.
+                </p>
+
+                <div class="product-bottom">
+                  <strong class="product-price"> Rp150.000 </strong>
+
+                  <button
+                    class="btn btn-product add-cart"
+                    data-name="Kopi Original"
+                    data-price="150000"
+                  >
+                    🛒 Tambah
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUK 2 -->
+
+            <article
+              class="product-card"
+              data-category="rasa"
+              data-name="Kopi Vanilla"
+              data-price="160000"
+            >
+              <div class="product-image product-cream">
+                <span class="product-badge badge-light"> Smooth Taste </span>
+
+                <img
+                  src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
+                  alt="Kopi Vanilla"
+                />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> SWEET SERIES </span>
+
+                <h3>Kopi Vanilla</h3>
+
+                <p>Perpaduan karakter kopi dengan sentuhan aroma vanilla.</p>
+
+                <div class="product-bottom">
+                  <strong class="product-price"> Rp160.000 </strong>
+
+                  <button
+                    class="btn btn-product add-cart"
+                    data-name="Kopi Vanilla"
+                    data-price="160000"
+                  >
+                    🛒 Tambah
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUK 3 -->
+
+            <article
+              class="product-card"
+              data-category="rasa"
+              data-name="Kopi Hazelnut"
+              data-price="160000"
+            >
+              <div class="product-image product-hazelnut">
+                <span class="product-badge badge-light"> Favorite </span>
+
+                <img
+                  src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=700&q=85"
+                  alt="Kopi Hazelnut"
+                />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> NUTTY SERIES </span>
+
+                <h3>Kopi Hazelnut</h3>
+
+                <p>Sensasi rasa nutty dengan aroma yang hangat dan menggoda.</p>
+
+                <div class="product-bottom">
+                  <strong class="product-price"> Rp160.000 </strong>
+
+                  <button
+                    class="btn btn-product add-cart"
+                    data-name="Kopi Hazelnut"
+                    data-price="160000"
+                  >
+                    🛒 Tambah
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUK 4 -->
+
+            <article
+              class="product-card"
+              data-category="rasa"
+              data-name="Kopi Caramel"
+              data-price="160000"
+            >
+              <div class="product-image product-caramel">
+                <span class="product-badge badge-light"> Sweet Series </span>
+
+                <img
+                  src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?auto=format&fit=crop&w=700&q=85"
+                  alt="Kopi Caramel"
+                />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> CARAMEL SERIES </span>
+
+                <h3>Kopi Caramel</h3>
+
+                <p>Sentuhan rasa manis yang cocok menemani waktu santai.</p>
+
+                <div class="product-bottom">
+                  <strong class="product-price"> Rp160.000 </strong>
+
+                  <button
+                    class="btn btn-product add-cart"
+                    data-name="Kopi Caramel"
+                    data-price="160000"
+                  >
+                    🛒 Tambah
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PESAN KETIKA PRODUK TIDAK DITEMUKAN -->
+
+          <p class="empty-message" id="emptyMessage" hidden>
+            Yah, produk yang kamu cari belum ditemukan. Coba kata kunci lainnya,
+            ya!
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================
+             TENTANG / KEUNGGULAN
+        ========================== -->
+
+      <section class="about section-padding" id="tentang">
+        <div class="container">
+          <div class="about-wrapper">
+            <div class="about-heading">
+              <span class="eyebrow"> CERITA DI BALIK SECANGKIR KOPI </span>
+
+              <h2>
+                Kenapa harus
+                <span>Kopi Luwak Lawak?</span>
+              </h2>
+
+              <p>
+                Karena menikmati kopi bukan cuma soal rasa, tetapi juga soal
+                pengalaman, suasana, dan cerita yang tercipta.
+              </p>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card">
+                <div class="feature-icon">☕</div>
+
+                <h3>Cita Rasa</h3>
+
+                <p>Pilihan produk untuk menemani momen ngopi kamu.</p>
+              </article>
+
+              <article class="feature-card">
+                <div class="feature-icon">🌿</div>
+
+                <h3>Karakter Khas</h3>
+
+                <p>Identitas kopi dengan karakter visual yang unik.</p>
+              </article>
+
+              <article class="feature-card">
+                <div class="feature-icon">✨</div>
+
+                <h3>Tampilan Premium</h3>
+
+                <p>Desain produk yang elegan, hangat, dan menarik.</p>
+              </article>
+
+              <article class="feature-card">
+                <div class="feature-icon">😆</div>
+
+                <h3>Bikin Lawak</h3>
+
+                <p>Nama unik untuk pengalaman ngopi yang lebih berkesan.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             CTA / PROMOSI
+        ========================== -->
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-card">
+            <div class="cta-mascot"><img src="Maskot_Rakun_Berkacamata_Ceria-removebg-preview.png" alt=""></div>
+
+            <div class="cta-content">
+              <span class="eyebrow"> WAKTUNYA NGOPI! </span>
+
+              <h2>Hidup terlalu singkat untuk kopi yang biasa saja.</h2>
+
+              <p>
+                Cari rasa favoritmu dan mulai cerita baru bersama Kopi Luwak
+                Lawak.
+              </p>
+
+              <a href="#produk" class="btn btn-light"> Temukan Kopimu → </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             KERANJANG BELANJA
+        ========================== -->
+
+      <section class="cart-section section-padding" id="keranjang">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow"> PESANAN KAMU </span>
+
+              <h2>Keranjang <span>Belanja.</span></h2>
+
+              <p>Periksa kembali produk pilihanmu.</p>
+            </div>
+          </div>
+
+          <div class="cart-box">
+            <div id="cartItems">
+              <p class="cart-empty">
+                Keranjangmu masih kosong. Yuk, pilih kopi favoritmu!
+              </p>
+            </div>
+
+            <div class="cart-summary">
+              <span>Total Belanja</span>
+
+              <strong id="cartTotal"> Rp0 </strong>
+            </div>
+
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+              Lanjutkan Pesanan →
+            </button>
+
+            <p class="cart-note">
+              *Produk dan harga di halaman ini merupakan contoh untuk
+              demonstrasi website.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer" id="kontak">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#beranda" class="logo footer-logo">
+              <span class="logo-icon">☕</span>
+
+              <span class="logo-text">
+                Kopi Luwak
+                <strong>Lawak.</strong>
+              </span>
+            </a>
+
+            <p>
+              Aroma mewah, rasa bikin ketawa. Teman ngopi untuk cerita yang
+              nggak ada habisnya.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Navigasi</h3>
+
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#kontak">Kontak</a>
+          </div>
+
+          <div class="footer-links">
+            <h3>Informasi</h3>
+
+            <a href="#produk">Katalog Produk</a>
+            <a href="#tentang">Keunggulan</a>
+            <a href="#keranjang">Keranjang Belanja</a>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Temukan Kami</h3>
+
+            <p>Punya pertanyaan atau ingin bekerja sama?</p>
+
+            <a href="mailto:halo@kopiluwaklawak.example"> ✉ Hubungi Kami </a>
+
+            <div class="social-links">
+              <a href="#kontak" aria-label="Instagram"> IG </a>
+
+              <a href="#kontak" aria-label="TikTok"> TK </a>
+
+              <a href="#kontak" aria-label="WhatsApp"> WA </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="currentYear">2026</span>
+            Kopi Luwak Lawak. Dibuat dengan ☕ dan sedikit lawakan.
+          </p>
+
+          <a href="#beranda"> Kembali ke atas ↑ </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================
+         NOTIFIKASI
+    ========================== -->
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      Produk berhasil ditambahkan!
+    </div>
+  </body>
+</html>
